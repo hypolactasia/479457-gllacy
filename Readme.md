@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Наталья  Осипова](https://up.htmlacademy.ru/htmlcss/18/user/479457).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
