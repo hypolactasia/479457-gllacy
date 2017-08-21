@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="site-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
-          <img src="http://placehold.it/158x69" width="154" height="64"
+          <img src="img/logo.svg" width="154" height="64"
                alt="Логотип Глейси">
           <ul class="site-navigation">
             <li><a href="#">Каталог</a>
@@ -89,7 +90,7 @@
 
             <article class="banner-left">
               
-              <h3 class="banner-title">Малинка даром!</h3>
+              <h2 class="banner-title">Малинка даром!</h2>
               <p class="banner-text">
                 При покупке 2 кг любого фруктового мороженого, 
                 добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -97,7 +98,7 @@
             </article>
 
             <article class="banner-right">
-              <h3 class="banner-title">Шоколадки даром!</h3>
+              <h2 class="banner-title">Шоколадки даром!</h2>
               <p class="banner-text">
                 При покупке 2 кг пломбира,добавим в ваш заказ 
                 упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
@@ -107,14 +108,16 @@
 
           <section class="popular">
            <h2 class="visually-hidden">Хиты</h2>
+
             <article class="catalog-item">
               <p class="catalog-item-image">
                 <a href="#">
-                  <img src="http://placehold.it/267x267" width="267" height="267"
+                  <img src="img/ice-1.jpg" width="267" height="267"
                        alt="Мороженое">
                 </a>
               </p>
               <p class="catalog-item-price">
+                <img src="img/hit.svg" alt="ХИТ">
                 <b>310₽/кг</b>
               </p>
               <h3>
@@ -130,11 +133,12 @@
             <article class="catalog-item">
                 <p class="catalog-item-image">
                   <a href="#">
-                    <img src="http://placehold.it/267x267" width="267" height="267"
+                    <img src="img/ice-2.jpg" width="267" height="267"
                          alt="Мороженое">
                   </a>
                   </p>
                   <p class="catalog-item-price">
+                     <img src="img/hit.svg" alt="ХИТ">
                     <b>380₽/кг</b>
                   </p>
                    <h3>
@@ -150,11 +154,12 @@
             <article class="catalog-item">
               <p class="catalog-item-image">
                 <a href="#">
-                  <img src="http://placehold.it/267x267" width="267" height="267"
+                  <img src="img/ice-3.jpg" width="267" height="267"
                        alt="Мороженое">
                 </a>
               </p>
               <p class="catalog-item-price">
+                <img src="img/hit.svg" alt="ХИТ">
                 <b>355₽/кг</b>
               </p>
               <h3>
@@ -170,11 +175,12 @@
             <article class="catalog-item">
               <p class="catalog-item-image">
                 <a href="#">
-                  <img src="http://placehold.it/267x267" width="267" height="267"
+                  <img src="img/ice-4.jpg" width="267" height="267"
                        alt="Мороженое">
                 </a>
               </p>
               <p class="catalog-item-price">
+                <img src="img/hit.svg" alt="ХИТ">
                 <b>415₽/кг</b>
               </p>
               <h3>
@@ -233,7 +239,7 @@
               <h3 class="blog-title">
                 <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
               </h3>
-              <img class="blog-img" src="http://placehold.it/420x220" 
+              <img class="blog-img" src="img/strawberry.jpg" 
                    alt="Cервировка фруктовых щербетов" width="420" height="220">
           </section>
              
@@ -255,6 +261,7 @@
           </section>
 
           <section class="map">
+            <img src="img/map.png" alt="Карта" width="1200" height="430">
             <h2 class="visually-hidden">Как до нас добраться</h2>
               <div class="adress-block">
                 <p class="adress-block-item">
@@ -274,16 +281,20 @@
               </div>
           </section>
       </main>
-    </div>
     
-    <div class="footer-wrapper"> 
+    
+     
       <footer class="main-footer">
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">
+                  <img src="img/twitter.svg" alt="twitter">Твиттер</a></li>
+                <li><a class="social-button" href="#">
+                  <img src="img/instagram.svg" alt="instagram">Инстаграм</a></li>
+                <li><a class="social-button" href="#">
+                  <img src="img/fb.svg" alt="facebook">Фейсбук</a></li>
+                <li><a class="social-button" href="#">
+                  <img src="img/vk.svg" alt="vk">Вконтакте</a></li>
             </ul>
         </div>
         <div class="footer-information">
@@ -295,7 +306,7 @@
             </ul>
         </div>
         <div class="footer-copyright">
-            <img src="http://placehold.it/108x37" alt="HTML academy" width="108" height="37">
+            <img src="img/logo-htmlacademy.svg" alt="HTML academy" width="108" height="37">
             
         <p class="copyright-text">
                 Сделано в  <a class="copyright-link" href="https://htmlacademy.ru"
@@ -303,7 +314,21 @@
         </p>
         </div>
       </footer>
-    </div>
+   
 
+     <section class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <p>Мы обязательно вам ответим!</p>
+        <form class="feedback-form" action="index.html" method="post">
+          <input type="text" name="feedback-name" placeholder="Как вас зовут?">
+          <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+          <textarea name="feedback-text" rows="4" cols="55" placeholder="Напишите что нибудь..."></textarea>
+          <button class="btn" type="submit"><span>Отправить</span></button>
+        </form>
+      </section>
+      <div class="modal-overlay"></div>
+
+
+    </div>
   </body>
 </html>
