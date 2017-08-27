@@ -91,12 +91,6 @@ a {
   text-decoration: underline;
 }
 
-.site-navigation-title a:hover,
-.site-navigation-title a:focus {
-  color: #333333;
-  background-color: #ffffff;
-}
-
 .site-navigation-current {
   background-color: #d07058;
   border-radius: 50px;
