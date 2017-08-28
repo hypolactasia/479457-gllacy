@@ -27,6 +27,7 @@ body {
 .news h3 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   color: #323232;
 }
 
@@ -66,9 +67,10 @@ a {
   background-image: url("../img/slide-3.png");
 }
 
-.site-navigation {
+.site-navigation li {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -84,11 +86,14 @@ a {
   list-style: none;
 }
 
-.site-navigation>a {
+.site-navigation>li {
   font-weight: bold;
   line-height: 30px;
-  text-align: center;
-  text-decoration: underline;
+  text-decoration: underline #ffffff;
+}
+
+.site-navigation-title a:hover {
+  color: #323232;
 }
 
 .site-navigation-current {
@@ -122,15 +127,18 @@ a {
   width: 144px;
 }
 
-.main-navigation-title {
-  font-weight: bold;
+.main-navigation-sub .main-navigation-title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #323232;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.main-navigation-title,
 .main-navigation-sub a{
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
   color: #323232;
 }
 
@@ -141,18 +149,22 @@ a {
   background-color: #f6b5a5;
 }
 
-.user-navigation>li {
-  list-style: none;
-}
+.active {
+  color: #ffffff;
+  background-color: #d07058;
+} 
 
-.user-information a:hover,
-.user-information a:focus {
-  color: #323232;
+.user-navigation>li {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  list-style: none;
 }
 
 .form-search input,
 .form-login input {
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   color: #999999;
 
@@ -160,39 +172,44 @@ a {
   border: 1px solid #d3d3d2;
 }
 
+.login-link a:hover {
+  color: #323232;
+}
+
 .login-hrefs a {
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
   color: #323232;
   text-decoration: underline;
-}
-
-.basket-cell {
-  font-size:13px;
-  line-height: 16px;
 }
 
 .working-time {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .working-phone {
   font-size: 22px;
   line-height: 24px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .slide-text {
   font-size: 60px;
   line-height: 60,35px;
+  font-weight: 700;
+  text-align: center;
   color: #ffffff;
 }
 
 .slide a {
   font-size: 32px;
   line-height: 44px;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -222,40 +239,53 @@ a {
 .banner-left {
    background-image: url("../img/raspberry.jpg");
    background-repeat: no-repeat;
+   border-radius: 15px;
 }
 
 .banner-right {
   background-image: url("../img/chocolate.jpg");
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .banner-title {
   font-size: 35px;
   line-height: 41px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .banner-text {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   color: #ffffff;
+}
+
+.banner-btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .catalog-price {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .catalog-weight {
   font-size: 30px;
   line-height: 45px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .catalog-item a {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 500;
   color: #ffffff;
   text-decoration: underline;
 }
@@ -265,38 +295,53 @@ a {
   color: #ffbc9e;
 }
 
+.catalog-item-image img {
+  border-radius: 135px;
+}
+
 .features {
   background: url(../img/waffle.jpg) 0 0;
+  border-radius: 15px;
 }
 
 .feature-info {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 500;
   color: #323232;
 }
 
 .features-text {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #323232;
+}
+
+.features-list {
+  list-style: none;
 }
 
 .news {
   width: 420px;
   height: 220px;
   background-image: url(../img/strawberry.jpg);
+  border-radius: 15px;
 }
 
 .news-title {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 500;
   color: #323232;
 }
 
 .blog-title a {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   color: #323232;
+  text-decoration: underline;
 }
 
 .blog-title a:hover,
@@ -306,36 +351,42 @@ a {
 
 .email-list {
   background: #f8f7f4 url(../img/pattern.png);
+  border-radius: 15px;
   position: relative;
 }
 
 .email-list-text {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #5a5a5a;
 }
 
 .email-list-wrapper input {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color: #999999;
 }
 
 .adress-block-item {
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: #323232;
 }
 
 .adress-block-item-bold {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   color: #323232;
 }
 
 .adress-block-phone {
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
   color: #323232;
 }
 
@@ -357,6 +408,10 @@ a {
   list-style: none;
 }
 
+.footer-item {
+  font-weight: 700;
+}
+
 .copyright-text {
   font-size: 12px;
   line-height: 18px;
@@ -370,6 +425,7 @@ a {
 .modal-content-title {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 500;
   color: #323232;
 }
 
@@ -422,6 +478,18 @@ a {
 }
 /* каталог */
 
+.basket-cell {
+  font-size:13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.basket-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
 .container .titles,
 .filters .titles {
   font-size: 14px;
@@ -430,10 +498,15 @@ a {
   list-style: none;
 }
 
+.filters .titles  {
+  font-weight: 500;
+}
+
 .sort-option,
 .filter-option {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -443,6 +516,9 @@ a {
 }
 
 .pagination-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   list-style: none;
 }
 
