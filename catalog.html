@@ -31,23 +31,24 @@
            <aside class="user-information">
             <ul class="user-navigation">
               <li class="search-link">
-                <a class="search-link" href="#"><span class="visually-hidden">Поиск</span></a>
-                  <div class="form-search">
+                <a class="search-link-item" href="#"><span class="visually-hidden">Поиск</span></a>
+                  <form class="form-search" method="post">
                     <label class="visually-hidden" for="search">Поиск</label>
                     <input type="search" name="search" id="search" 
                            placeholder="Что ищем?">
-                  </div>
+                  </form>
               </li>
               <li class="login-links">
-                <a class="login-link" href="#login.html">Вход</a>
-                  <form action="#" method="get">
+                <a class="login-link" href="#login.html">Вход
+                </a>
+                  <form class="form-sign" action="#" method="get">
                     <div class="form-login">
 
-                      <label class="visually-hidden" for="login">
-                        Электронная почта
-                      </label>
+                      <label class="login-email" for="login">
+                        <span class="visually-hidden">Электронная почта</span>
                       <input type="email" name="login" id="login"
                              placeholder="Электронная почта">
+                      </label>
 
                       <label class="visually-hidden" for="password">
                         Пароль
@@ -57,14 +58,18 @@
 
                     </div>
 
-                    <button class="button" type="submit" name="enter">
-                      <span class="enter-title">Войти</span>
-                    </button>
+                    <div class="login-enter">
 
-                    <div class="login-hrefs">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
+                      <button class="button" type="submit" name="enter">
+                        <span class="enter-title">Войти</span>
+                      </button>
+
+                      <div class="login-hrefs">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </div>
                     </div>
+
                   </form>
               </li>
 
@@ -453,37 +458,34 @@
       </main>
     
       <footer class="main-footer">
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">
-                  <img src="img/twitter.svg" alt="twitter">
+          <div class="footer-social-icons">
+            <ul class="footer-social">
+                <li class="social-item"><a class="social-button social-button-twitter" href="#">
                   <span class="visually-hidden">Твиттер</span></a></li>
-                <li><a class="social-button" href="#">
-                  <img src="img/instagram.svg" alt="instagram">
+                <li class="social-item"><a class="social-button social-button-instagram" href="#">
                   <span class="visually-hidden">Инстаграм</span></a></li>
-                <li><a class="social-button" href="#">
-                  <img src="img/fb.svg" alt="facebook">
+                <li class="social-item"><a class="social-button social-button-facebook" href="#">
                   <span class="visually-hidden">Фейсбук</span></a></li>
-                <li><a class="social-button" href="#">
-                  <img src="img/vk.svg" alt="vk">
+                <li class="social-item"><a class="social-button social-button-vk" href="#">
                   <span class="visually-hidden">Вконтакте</span></a></li>
-          </ul>
-        </div>
+            </ul>
+          </div>
         <div class="footer-information">
-            <ul class="footer-links">
-                <li class="footer-link"><a href="#"><b class="underline">Для поставщиков</b></a></li>
+             <ul class="footer-links">
+                <li class="footer-link footer-heart"><a href="#"><b class="underline">Для поставщиков</b></a></li>
                 <li class="footer-link"><a href="#"><span class="underline">Наши документы</span></a></li>
                 <li class="footer-link"><a href="#"><span class="underline">О производстве</span></a></li>
                 <li class="footer-link"><a href="#"><span class="underline">Экологические стандарты</span></a></li>
             </ul>
         </div>
         <div class="footer-copyright">
-            <img src="img/logo-htmlacademy.svg" alt="HTML academy" width="108" height="37">
             
-        <p class="copyright-text">
-                Сделано в  <a class="copyright-link" href="https://htmlacademy.ru"
-                ><span class="underline">HTML Academy</span></a> 2016
-        </p>
+            <p class="copyright-text">
+                Сделано в  <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                  <span class="underline">HTML Academy</span></a> 2017
+            </p>
+              <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-htmlacademy.svg" width="108" height="37" alt="HTML Academy"></a>
         </div>
       </footer>
 
