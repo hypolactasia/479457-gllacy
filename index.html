@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
+
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+
     <div class="site-wrapper">
       <header class="main-header container">
         <nav class="main-navigation">
@@ -39,8 +44,11 @@
                   </form>
               </li>
               <li class="login-links">
+                  
                 <a class="login-link" href="#login.html">Вход
+                  <svg class="login-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                 </a>
+              
                   <form class="form-sign" action="#" method="get">
                     <div class="form-login">
 
@@ -79,40 +87,40 @@
             </ul>
 
             <div class="working-information">
-              <p class="working-time">С 10 до 20,ежедневно</p>
+              <p class="working-time">С 10 до 20, ежедневно</p>
               <p class="working-phone">8 812 450-25-25</p>
             </div>
           </aside>
         </nav>
       </header>
-      <main class="container">
+      <main class="container"> 
+
         <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
 
           <section class="main-banner">
             <h2 class="visually-hidden">Предложения</h2>
 
             <div class="slider">
-              <input class="slider-first" type="radio" id="btn-1" name="toggle" id="first-slider" checked>
-              <input class="slider-second" type="radio" id="btn-2" name="toggle" id="second-slider">
-              <input class="slider-third" type="radio" id="btn-3" name="toggle" id="third-slider">
-              <div class="slider-controls">
-                <label class="label-slider" for="first-slider"></label>
-                <label class="label-slider" for="second-slider"></label>
-                <label class="label-slider" for="third-slider"></label>
+
+              <div class="slide" id="slide1">
+                <p class="slide-text">Крем-брюле и пломбир с малиновым джемом</p>
+                <a class="button slide-btn" href="#">Давайте оба!</a>
+              </div>
+              <div class="slide" id="slide2">
+                <p class="slide-text">Шоколадный пломбир и лимонный сорбет</p>
+                <a class="button slide-btn" href="#">Давайте оба!</a>
+              </div>
+              <div class="slide" id="slide3">
+                <p class="slide-text">Пломбир с помадкой и клубничный щербет</p>
+                <a class="button slide-btn" href="#">Давайте оба!</a>
               </div>
 
-              <div class="slide" id="slide-1">
-                <p class="slide-text">Крем-брюле и пломбир с малиновым джемом</p>
-                <a class="button slide-btn-1" href="#">Давайте оба!</a>
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>  
               </div>
-              <div class="slide" id="slide-2">
-                <p class="slide-text">Шоколадный пломбир и лимонный сорбет</p>
-                <a class="button slide-btn-2" href="#">Давайте оба!</a>
-              </div>
-              <div class="slide" id="slide-3">
-                <p class="slide-text">Пломбир с помадкой и клубничный щербет</p>
-                <a class="button slide-btn-3" href="#">Давайте оба!</a>
-              </div>
+
             </div>
 
           </section>  
@@ -150,7 +158,7 @@
                   
               </p>
               <p class="catalog-item-price">
-                <b><span class="catalog-price">310</span>₽ <span class="catalog-weight">
+                <b><span class="catalog-price">310</span> <span class="catalog-weight">
                   /кг</span></b>
               </p>
               <h3>
@@ -158,7 +166,9 @@
                   Сливочное с апельсиновым джемом и цитрусовой стружкой
                 </span></a>
               </h3>
-               <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+               <div class="item-hover">
+                <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+              </div>
             </article>
 
             <article class="catalog-item">
@@ -168,7 +178,7 @@
                          alt="Мороженое">
                   </p>
                   <p class="catalog-item-price">
-                    <b><span class="catalog-price">380</span>₽<span class="catalog-weight">
+                    <b><span class="catalog-price">380</span> <span class="catalog-weight">
                       /кг</span></b>
                   </p>
                    <h3>
@@ -176,7 +186,9 @@
                         Сливочно-кофейное с кусочками шоколада
                     </span></a>
                   </h3>
-                  <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+                  <div class="item-hover">
+                    <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+                  </div>
             </article>
               
             <article class="catalog-item">
@@ -186,7 +198,7 @@
                        alt="Мороженое">
               </p>
               <p class="catalog-item-price">
-                <b><span class="catalog-price">355</span>₽<span class="catalog-weight">
+                <b><span class="catalog-price">355</span> <span class="catalog-weight">
                   /кг</span></b>
               </p>
               <h3>
@@ -194,7 +206,9 @@
                   Сливочно-клубничное с присыпкой из белого шоколада
                 </span></a>
               </h3>
-              <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+              <div class="item-hover">
+                <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+              </div>
             </article>
 
             <article class="catalog-item">
@@ -204,7 +218,7 @@
                        alt="Мороженое">
               </p>
               <p class="catalog-item-price">
-                <b><span class="catalog-price">415</span>₽<span class="catalog-weight">
+                <b><span class="catalog-price">415</span> <span class="catalog-weight">
                   /кг</span></b>
               </p>
               <h3>
@@ -212,7 +226,9 @@
                   Сливочное крем-брюле с карамельной подливкой
                 </span></a>
               </h3>
-              <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+              <div class="item-hover">
+                <button class="button btn-red-catalog" type="button">Быстрый просмотр</button>
+              </div>
             </article>
           </section>
 
@@ -221,7 +237,7 @@
             <h2 class="visually-hidden">Преимущества</h2>
 
               <p class="feature-info">
-                Магазин Глейси - это онлайн и офлайн магазин 
+                Магазин Глейси — это онлайн и офлайн магазин 
                 по продаже мороженого собственного производства
                 на развес
               </p>
@@ -253,41 +269,46 @@
           </section>
              
           <section class="email-list">
+            <div class="email-wrapper">
+              <h2 class="visually-hidden">Рассылка</h2>
 
-            <h2 class="visually-hidden">Рассылка</h2>
+              <p class="email-list-text">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего 
+                самого вкусного, что у нас происходит. Обещаем не спамить 
+                и не слать всякой ненужной ерунды. Честно =)
+              </p>
 
-            <p class="email-list-text">
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего 
-              самого вкусного, что у нас происходит. Обещаем не спамить 
-              и не слать всякой ненужной ерунды. Честно =)
-            </p>
+              <form class="email-list-item" action="#" method="post">
 
-            <form class="email-list-item" action="#" method="post">
+                <div class="email-list-wrapper">
+                  <input type="email" name="email" id="email-list-email"
+                              placeholder="Электронная почта">
+                        <label class="visually-hidden" for="email-list-email">
+                          Электронная почта
+                        </label>
+                </div>
 
-              <div class="email-list-wrapper">
-                <input type="email" name="email" id="email-list-email"
-                             placeholder="Электронная почта">
-                      <label class="visually-hidden" for="email-list-email">
-                        Электронная почта
-                      </label>
-              </div>
-
-               <button class="button email-list-button" type="submit" name="send">
-                 <span>Отправить</span>
-              </button>
-            </form>
+                <button class="button email-list-button" type="submit" name="send">
+                  <span>Отправить</span>
+                </button>
+              </form>
+            </div>
           </section>
           </div>
+      </main>
 
-          <section class="map">
+      <section class="map">
 
             <h2 class="visually-hidden">Как до нас добраться</h2>
 
-            <img src="img/map.png" 
-               alt="Магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" 
-               width="1200" height="430">
-
-              <div class="adress-block">
+            <img class="pin" src="img/pin+shadow.png" alt="указатель">
+			      	<p>
+                <img class="map-image" src="img/mapbig.jpg" 
+                  alt="Магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" 
+                  width="1200" height="430">
+			      	</p>
+      
+              <div class="container adress-block">
                 <p class="adress-block-item">
                   Адрес главного офиса и <br>
                   офлайн магазина: <br>
@@ -304,7 +325,6 @@
                 <a class="button contacts-button" href="#">Форма обратной связи</a>
               </div>
           </section>
-      </main>
     
       <footer class="main-footer">
           <div class="footer-social-icons">
