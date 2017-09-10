@@ -195,7 +195,6 @@ a {
   padding: 0;
 
   width: 144px;
-  height: 178px;
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -219,7 +218,7 @@ a {
 
 .main-navigation-sub .main-navigation-title {
   margin: 0 auto;
-  padding: 13px 63px 14px 20px;
+  padding: 13px 63px 10px 20px;
 
   font-size: 14px;
   line-height: 16px;
@@ -228,6 +227,7 @@ a {
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 
 .main-navigation-sub a{
   font-size: 14px;
@@ -239,13 +239,14 @@ a {
 }
 
 .sub-item {
-  padding-top: 4px;
-  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 6px;
 }
 
 .sub-item:last-child  {
 	border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  padding-bottom: 8px;
 }
 
 .main-navigation-sub .sub-item:hover {
@@ -685,7 +686,7 @@ a.basket-link-empty:hover svg,
   position: relative;
 
   padding-top: 270px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 
   text-align: center;
   color: #ffffff;
@@ -716,7 +717,7 @@ a.basket-link-empty:hover svg,
 .slide-btn {
   display: inline-block;
   
-  padding: 12px 40px;
+  padding: 11px 40px;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -838,7 +839,7 @@ label[for="btn-3"]:hover {
 
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
-   padding: 17px 21px 70px 19px;
+   padding: 15px 21px 70px 19px;
 }
 
 .banner-right {
@@ -852,7 +853,7 @@ label[for="btn-3"]:hover {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 17px 21px 70px 19px;
+  padding: 15px 21px 70px 19px;
 }
 
 .banner-title {
@@ -922,15 +923,16 @@ label[for="btn-3"]:hover {
 }
 
 .popular-item {
-	width: 267px;
-  position: relative;
+  width: 267px;
   margin-bottom: 22px;
+
+  position: relative;
 }
 
 .catalog-item {
   width: 267px;
-  margin-bottom: 25px;
-  margin-right: 25px;
+  margin-bottom: 21px;
+  margin-right: 26px;
 
   position: relative;
 }
@@ -1085,7 +1087,7 @@ label[for="btn-3"]:hover {
 	border-radius: 15px;
 	
   margin-bottom: 41px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .feature-info {
@@ -1095,7 +1097,7 @@ label[for="btn-3"]:hover {
   line-height: 30px;
   letter-spacing: 0.08px;
 	
-	margin-left: 20px;
+	margin-left: 21px;
 	margin-top: 15px;
   margin-bottom: 23px; 
 }
@@ -1183,7 +1185,7 @@ label[for="btn-3"]:hover {
   width: 1146px;
 
 	margin: 0 auto;
-	margin-bottom: 37px;
+	margin-bottom: 38px;
 }
 
 .email-list,
@@ -1209,8 +1211,8 @@ label[for="btn-3"]:hover {
   line-height: 22px;
   
 	margin: 0;
-	margin-top: 21px;
-	margin-bottom: 6px;
+	margin-top: 22px;
+	margin-bottom: 5px;
 }
 
 .news > h3 {
@@ -1258,7 +1260,7 @@ label[for="btn-3"]:hover {
 .email-list-text {
   margin: 0;
 	padding: 0;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 36px;
 
   font-size: 16px;
@@ -1292,12 +1294,6 @@ label[for="btn-3"]:hover {
 
   border-radius: 5px;
   border: 1px solid #d3d3d2;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #999999;
 }
 
 .email-post {
@@ -1387,7 +1383,7 @@ label[for="btn-3"]:hover {
 
   width: 172px;
   margin-top: 14px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .adress-block-item-bold {
@@ -1447,7 +1443,7 @@ label[for="btn-3"]:hover {
   box-sizing: border-box;
 
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 23px;
 
   width: 1146px;
@@ -2306,7 +2302,7 @@ label[for="btn-3"]:hover {
 .fat {
   width: 415px;
   margin: 0;
-  padding: 10px 22px 8px 2px;
+  padding: 9px 19px 8px 2px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2344,7 +2340,8 @@ label[for="btn-3"]:hover {
 	width: 25px;
   height: 25px;
   
-	background-image: url("../img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
+  background-size: cover;
   background-position: center;
   
   position: absolute;
@@ -2360,8 +2357,10 @@ label[for="btn-3"]:hover {
 	content: "";
 	width: 25px;
 	height: 25px;
-	background-image: url("../img/radio-on.svg");
-	background-position: center;
+  background-image: url("../img/radio-on.svg");
+  background-size: cover;
+  background-position: center;
+  
   position: absolute;
   left: 0px;
   top: -4px;
@@ -2426,7 +2425,7 @@ label[for="btn-3"]:hover {
 	width: 25px;
   height: 25px;
   
-	background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
 	background-position: left center;
   background-repeat: no-repeat;
   
@@ -2441,9 +2440,10 @@ label[for="btn-3"]:hover {
 	content: "";
 	width: 27px;
 	height: 27px;
-	background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 	background-position: center;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  
 	position: absolute;
 	left: 0px;
   top: -6px;
@@ -2506,9 +2506,9 @@ label[for="btn-3"]:hover {
 	width: 189px;
   margin: 0;
   margin-left: auto;
-  margin-top: 31px;
+  margin-top: 37px;
   padding: 0;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   
   font-size: 16px;
   line-height: 18px;
