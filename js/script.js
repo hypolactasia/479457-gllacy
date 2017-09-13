@@ -10,49 +10,48 @@
  var storageEmail = localStorage.getItem("feedbackEmail");
 
  feedback.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  feedbackPopup.classList.add("modal-show");
-  modalOverlay.classList.add("modal-overlay-show");
-  if (storageName && storageEmail) {
-   feedbackName.value = storageName;
-   feedbackEmail.value = storageEmail;
-   feedbackText.focus();
-  } else if (storageName) {
-   feedbackName.value = storageName;
-   feedbackEmail.focus();
-  } else if (storageEmail) {
-   feedbackEmail.value = storageEmail;
-   feedbackName.focus();
-  } else {
-   feedbackName.focus();
-  } 
- }); 
+   evt.preventDefault();
+   feedbackPopup.classList.add("modal-show");
+   modalOverlay.classList.add("modal-overlay-show");
+   if (storageName && storageEmail) {
+     feedbackName.value = storageName;
+     feedbackEmail.value = storageEmail;
+     feedbackText.focus();
+   } else if (storageName) {
+     feedbackName.value = storageName;
+     feedbackEmail.focus();
+   } else if (storageEmail) {
+     feedbackEmail.value = storageEmail;
+     feedbackName.focus();
+   } else {
+     feedbackName.focus();
+   }
+ });
 
  feedbackForm.addEventListener("submit", function(evt) {
-  if (!feedbackName.value || !feedbackEmail.value) {
-   event.preventDefault();
-   feedbackPopup.classList.remove("modal-error");
-   feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-   feedbackPopup.classList.add("modal-error");
-  } else {
-   localStorage.setItem("feedbackName", feedbackName.value);
-   localStorage.setItem("feedbackEmail", feedbackEmail.value);
-  }
+   if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
+     event.preventDefault();
+     feedbackPopup.classList.remove("modal-error");
+     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+     feedbackPopup.classList.add("modal-error");
+   } else {
+     localStorage.setItem("feedbackName", feedbackName.value);
+   }
  });
 
  feedbackClose.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalOverlay.classList.remove("modal-overlay-show");
-  feedbackPopup.classList.remove("modal-show");
-  feedbackPopup.classList.remove("modal-error");
+   evt.preventDefault();
+   modalOverlay.classList.remove("modal-overlay-show");
+   feedbackPopup.classList.remove("modal-show");
+   feedbackPopup.classList.remove("modal-error");
  });
 
  window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-   if (feedbackPopup.classList.contains("modal-show")) {
-    feedbackPopup.classList.remove("modal-show");
-    modalOverlay.classList.remove("modal-overlay-show");
-    feedbackPopup.classList.remove("modal-error");
+   if (event.keyCode === 27) {
+     if (feedbackPopup.classList.contains("modal-show")) {
+       feedbackPopup.classList.remove("modal-show");
+       modalOverlay.classList.remove("modal-overlay-show");
+       feedbackPopup.classList.remove("modal-error");
+     }
    }
-  }
  });
