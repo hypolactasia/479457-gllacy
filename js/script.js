@@ -25,15 +25,15 @@
    feedbackName.focus();
   } else {
    feedbackName.focus();
-  }
- });
+  } 
+ }); 
 
  feedbackForm.addEventListener("submit", function(evt) {
   if (!feedbackName.value || !feedbackEmail.value) {
    event.preventDefault();
-   feedbackPopup.classList.add("modal-error");
-   feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
    feedbackPopup.classList.remove("modal-error");
+   feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+   feedbackPopup.classList.add("modal-error");
   } else {
    localStorage.setItem("feedbackName", feedbackName.value);
    localStorage.setItem("feedbackEmail", feedbackEmail.value);
@@ -44,7 +44,7 @@
   evt.preventDefault();
   modalOverlay.classList.remove("modal-overlay-show");
   feedbackPopup.classList.remove("modal-show");
-  feedbackPopup.classList.add("modal-error");
+  feedbackPopup.classList.remove("modal-error");
  });
 
  window.addEventListener("keydown", function(event) {
@@ -52,7 +52,7 @@
    if (feedbackPopup.classList.contains("modal-show")) {
     feedbackPopup.classList.remove("modal-show");
     modalOverlay.classList.remove("modal-overlay-show");
-    feedbackPopup.classList.add("modal-error");
+    feedbackPopup.classList.remove("modal-error");
    }
   }
  });
