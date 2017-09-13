@@ -51,6 +51,11 @@ a {
     -o-transition: background-image 0.5s ease, background-color 0.5s ease;
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+.site-wrapper-2{
+    background: -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 100%); 
+    background: -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%); 
+    background: linear-gradient(to bottom, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%);
+}
 .container {
     margin: 0 auto;
     padding-left: 27px;
@@ -2112,16 +2117,16 @@ label[for="btn-3"]:hover {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    width: 189px;
     margin: 0;
     margin-left: auto;
     margin-top: 37px;
     padding: 0;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .pagination-list a {
     display: -webkit-box;
@@ -2195,7 +2200,4 @@ label[for="btn-3"]:hover {
 }
 .pagination-item-current a:hover {
     background-color: #ffffff;
-}
-.inner-wrapper {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
