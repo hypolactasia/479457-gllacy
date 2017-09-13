@@ -1871,13 +1871,13 @@ label[for="btn-3"]:hover {
     color: #ffffff;
     list-style: none;
 }
-.sort-option,
-.filter-option {
+.sort-option {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
-    background-color: #9db1a5;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3em;
 }
 .sort-option:hover,
 .filters-sort:hover,
